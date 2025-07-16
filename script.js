@@ -1,4 +1,405 @@
+// Language content
+const translations = {
+  en: {
+    nav: {
+      cta: "Let's Talk",
+    },
+    hero: {
+      title: "Hi. I'm Gustavo",
+      subtitle:
+        "I'm a developer creating beautiful, functional digital experiences that make an impact.",
+      cta1: 'View My Work',
+      cta2: 'Contact Me',
+    },
+    services: {
+      title: 'My Services',
+      subtitle:
+        'I offer a range of services to help bring your digital vision to life',
+      items: [
+        {
+          title: 'Web Development',
+          description:
+            'Beautiful, intuitive interfaces that engage users and drive conversions. I create designs that are both aesthetically pleasing and highly functional.',
+        },
+        {
+          title: 'UI/UX Design',
+          description:
+            'Robust, scalable websites built with clean, maintainable code. I bring designs to life with the latest web technologies.',
+        },
+        {
+          title: 'Responsive Design',
+          description:
+            'Flawless experiences across all devices and screen sizes. Your website will look and work great everywhere.',
+        },
+        {
+          title: 'Backend Development',
+          description:
+            'Building robust and scalable backend systems with modern technologies. I create efficient server-side solutions that power your applications.',
+        },
+        {
+          title: 'API Development',
+          description:
+            'Professional REST and SOAP API development. I design clean, well-documented APIs that integrate seamlessly with frontend and mobile applications.',
+        },
+        {
+          title: 'Automation',
+          description:
+            'Custom automation solutions to streamline your workflows. I can automate repetitive tasks and integrate various services to save you time and effort.',
+        },
+        {
+          title: 'Deployment & DevOps',
+          description:
+            'Seamless deployment to platforms like Vercel and more. I ensure your applications are deployed efficiently and run smoothly in production.',
+        },
+      ],
+    },
+    portfolio: {
+      title: 'Selected Work',
+      subtitle: 'A selection of my recent projects and case studies',
+      viewProject: 'View Project',
+      viewCode: 'View Code',
+      viewAll: 'View All Projects',
+      project1: {
+        title: 'Minimal Portfolio',
+        category: 'Web Development',
+      },
+      project2: {
+        title: 'E-commerce Platform',
+        category: 'Web Application',
+      },
+      project3: {
+        title: 'Mobile App Design',
+        category: 'UI/UX Design',
+      },
+      project4: {
+        title: 'Dashboard UI',
+        category: 'Web Design',
+      },
+    },
+    contact: {
+      title: 'Get In Touch',
+      subtitle:
+        'Have a project in mind or want to discuss potential opportunities? Feel free to reach out!',
+      form: {
+        name: 'Your Name',
+        email: 'Your Email',
+        message: 'Your Message',
+        submit: 'Send Message',
+      },
+    },
+    footer: {
+      copyright: '© 2025 Gustavo Siqueira. All rights reserved.',
+      madeWith: 'Made with',
+      and: 'and',
+      by: 'by',
+    },
+  },
+  pt: {
+    nav: {
+      cta: 'Vamos Conversar',
+    },
+    hero: {
+      title: 'Olá. Eu sou Gustavo',
+      subtitle:
+        'Sou um desenvolvedor criando experiências digitais bonitas e funcionais que causam impacto.',
+      cta1: 'Ver Trabalhos',
+      cta2: 'Contato',
+    },
+    services: {
+      title: 'Meus Serviços',
+      subtitle:
+        'Ofereço uma variedade de serviços para ajudar a trazer sua visão digital à vida',
+      items: [
+        {
+          title: 'Desenvolvimento Web',
+          description:
+            'Interfaces bonitas e intuitivas que engajam os usuários e impulsionam conversões. Crio designs esteticamente agradáveis e altamente funcionais.',
+        },
+        {
+          title: 'Design UI/UX',
+          description:
+            'Sites robustos e escaláveis construídos com código limpo e de fácil manutenção. Trago designs à vida com as mais recentes tecnologias web.',
+        },
+        {
+          title: 'Design Responsivo',
+          description:
+            'Experiências perfeitas em todos os dispositivos e tamanhos de tela. Seu site terá uma ótima aparência e funcionamento em qualquer lugar.',
+        },
+        {
+          title: 'Desenvolvimento Backend',
+          description:
+            'Construção de sistemas backend robustos e escaláveis com tecnologias modernas. Crio soluções eficientes do lado do servidor que alimentam suas aplicações.',
+        },
+        {
+          title: 'Desenvolvimento de API',
+          description:
+            'Desenvolvimento profissional de APIs REST e SOAP. Projeto APIs limpas e bem documentadas que se integram perfeitamente com aplicações frontend e mobile.',
+        },
+        {
+          title: 'Automação',
+          description:
+            'Soluções personalizadas de automação para otimizar seus fluxos de trabalho. Posso automatizar tarefas repetitivas e integrar vários serviços para economizar seu tempo e esforço.',
+        },
+        {
+          title: 'Deploy & DevOps',
+          description:
+            'Implantações perfeitas em plataformas como Vercel e outras. Garanto que suas aplicações sejam implantadas com eficiência e funcionem perfeitamente em produção.',
+        },
+      ],
+    },
+    portfolio: {
+      title: 'Trabalhos Selecionados',
+      subtitle: 'Uma seleção dos meus projetos e estudos de caso recentes',
+      viewProject: 'Ver Projeto',
+      viewCode: 'Ver Código',
+      viewAll: 'Ver Todos os Projetos',
+      project1: {
+        title: 'Portfólio Minimalista',
+        category: 'Desenvolvimento Web',
+      },
+      project2: {
+        title: 'Plataforma E-commerce',
+        category: 'Aplicação Web',
+      },
+      project3: {
+        title: 'Design de Aplicativo',
+        category: 'Design UI/UX',
+      },
+      project4: {
+        title: 'Painel de Controle',
+        category: 'Design Web',
+      },
+    },
+    contact: {
+      title: 'Entre em Contato',
+      subtitle:
+        'Tem um projeto em mente ou deseja discutir oportunidades potenciais? Sinta-se à vontade para entrar em contato!',
+      form: {
+        name: 'Seu Nome',
+        email: 'Seu E-mail',
+        message: 'Sua Mensagem',
+        submit: 'Enviar Mensagem',
+      },
+    },
+    footer: {
+      copyright: '© 2025 Gustavo Siqueira. Todos os direitos reservados.',
+      madeWith: 'Feito com',
+      and: 'e',
+      by: 'por',
+    },
+  },
+}
+
+// Set initial language
+let currentLang = 'en'
+
+// Function to update services section
+function updateServices(lang) {
+  const servicesContainer = document.getElementById('services-container')
+  if (!servicesContainer) return
+
+  const services = translations[lang]?.services?.items || []
+  const icons = [
+    'fa-laptop-code',
+    'fa-paint-brush',
+    'fa-mobile-alt',
+    'fa-server',
+    'fa-exchange-alt',
+    'fa-robot',
+    'fa-rocket',
+  ]
+
+  servicesContainer.innerHTML = services
+    .map(
+      (service, index) => `
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas ${icons[index] || 'fa-code'}"></i>
+      </div>
+      <h3>${service.title || ''}</h3>
+      <p>${service.description || ''}</p>
+    </div>
+  `
+    )
+    .join('')
+}
+
+// Function to update portfolio section
+function updatePortfolio(lang) {
+  const portfolioContainer = document.getElementById('portfolio-container')
+  if (!portfolioContainer) return
+
+  const portfolioItems = [
+    {
+      id: 'project1',
+      image: 'https://picsum.photos/800/1000?random=1',
+      category: 'portfolio.project1.category',
+      title: 'portfolio.project1.title',
+      viewLabel: 'portfolio.viewProject',
+      codeLabel: 'portfolio.viewCode',
+    },
+    {
+      id: 'project2',
+      image: 'https://picsum.photos/800/1000?random=2',
+      category: 'portfolio.project2.category',
+      title: 'portfolio.project2.title',
+      viewLabel: 'portfolio.viewProject',
+      codeLabel: 'portfolio.viewCode',
+    },
+    {
+      id: 'project3',
+      image: 'https://picsum.photos/800/1000?random=3',
+      category: 'portfolio.project3.category',
+      title: 'portfolio.project3.title',
+      viewLabel: 'portfolio.viewProject',
+      codeLabel: 'portfolio.viewCode',
+    },
+    {
+      id: 'project4',
+      image: 'https://picsum.photos/800/1000?random=4',
+      category: 'portfolio.project4.category',
+      title: 'portfolio.project4.title',
+      viewLabel: 'portfolio.viewProject',
+      codeLabel: 'portfolio.viewCode',
+    },
+  ]
+
+  portfolioContainer.innerHTML = portfolioItems
+    .map((item) => {
+      // Get translations
+      const getTranslation = (key) => {
+        const keys = key.split('.')
+        let value = translations[lang]
+        for (const k of keys) {
+          value = value?.[k]
+        }
+        return value || key
+      }
+
+      return `
+      <div class="portfolio-item">
+        <div class="portfolio-image" style="background-image: url('${
+          item.image
+        }')">
+          <div class="portfolio-overlay">
+            <div class="portfolio-content">
+              <span class="portfolio-category">${getTranslation(
+                item.category
+              )}</span>
+              <h3>${getTranslation(item.title)}</h3>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link" aria-label="${getTranslation(
+                  item.viewLabel
+                )}">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="#" class="portfolio-link" aria-label="${getTranslation(
+                  item.codeLabel
+                )}">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+    })
+    .join('')
+}
+
+// Function to update content based on language
+function updateContent(lang) {
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const keys = element.dataset.i18n.split('.')
+    let value = translations[lang]
+
+    // Safely get the nested translation value
+    for (const key of keys) {
+      if (value && typeof value === 'object' && key in value) {
+        value = value[key]
+      } else {
+        console.warn(`Translation key not found: ${element.dataset.i18n}`)
+        return // Skip this element if the key path is invalid
+      }
+    }
+
+    // Update the element's content
+    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+      element.value = value
+    } else if (element.hasAttribute('placeholder')) {
+      element.setAttribute('placeholder', value)
+    } else if (element.hasAttribute('title')) {
+      element.setAttribute('title', value)
+    } else if (element.hasAttribute('alt')) {
+      element.setAttribute('alt', value)
+    } else {
+      element.textContent = value
+    }
+  })
+
+  // Update elements with data-i18n-placeholder attribute
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    const keys = element.dataset.i18nPlaceholder.split('.')
+    let value = translations[lang]
+
+    // Safely get the nested translation value
+    for (const key of keys) {
+      if (value && typeof value === 'object' && key in value) {
+        value = value[key]
+      } else {
+        console.warn(
+          `Translation key not found: ${element.dataset.i18nPlaceholder}`
+        )
+        return // Skip this element if the key path is invalid
+      }
+    }
+
+    element.setAttribute('placeholder', value)
+  })
+
+  // Update services section
+  updateServices(lang)
+
+  // Update portfolio section
+  updatePortfolio(lang)
+
+  // Update active state of language buttons
+  document.querySelectorAll('.language-option').forEach((btn) => {
+    if (btn.dataset.lang === lang) {
+      btn.classList.add('active')
+    } else {
+      btn.classList.remove('active')
+    }
+  })
+
+  // Save language preference
+  localStorage.setItem('preferredLanguage', lang)
+  currentLang = lang
+}
+
+// Initialize language from localStorage or browser language
+function initLanguage() {
+  const savedLang = localStorage.getItem('preferredLanguage')
+  const browserLang = navigator.language.split('-')[0]
+  const defaultLang = ['en', 'pt'].includes(browserLang) ? browserLang : 'en'
+  updateContent(savedLang || defaultLang)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize language
+  initLanguage()
+
+  // Add click handlers for language switcher
+  document.querySelectorAll('.language-option').forEach((button) => {
+    button.addEventListener('click', function () {
+      const lang = this.dataset.lang
+      if (lang !== currentLang) {
+        updateContent(lang)
+      }
+    })
+  })
   // Navbar scroll effect
   const navbar = document.querySelector('.navbar')
 
@@ -199,7 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault()
       window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
     })
   }

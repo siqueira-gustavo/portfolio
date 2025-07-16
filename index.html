@@ -38,7 +38,18 @@
     <nav class="navbar">
       <div class="container">
         <div class="logo">Gustavo Siqueira</div>
-        <button class="cta-button">Let's Talk</button>
+        <div class="nav-right">
+          <div class="language-switcher">
+            <button class="language-option active" data-lang="en" aria-label="English">
+              <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20" height="15">
+            </button>
+            <span class="language-separator">/</span>
+            <button class="language-option" data-lang="pt" aria-label="Português">
+              <img src="https://flagcdn.com/w20/br.png" alt="Português" width="20" height="15">
+            </button>
+          </div>
+          <button class="cta-button" data-i18n="nav.cta">Let's Talk</button>
+        </div>
       </div>
     </nav>
 
@@ -46,8 +57,8 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Hi. I'm Gustavo</h1>
-          <p>
+          <h1 data-i18n="hero.title">Hi. I'm Gustavo</h1>
+          <p data-i18n="hero.subtitle">
             I'm a developer creating beautiful, functional digital experiences
             that make an impact.
           </p>
@@ -55,11 +66,13 @@
             <a
               href="#work"
               class="cta-button"
+              data-i18n="hero.cta1"
               >View My Work</a
             >
             <a
               href="#contact"
               class="cta-button secondary"
+              data-i18n="hero.cta2"
               >Contact Me</a
             >
           </div>
@@ -81,88 +94,14 @@
     >
       <div class="container">
         <div class="section-header">
-          <h2>My Services</h2>
-          <p>
+          <h2 data-i18n="services.title">My Services</h2>
+          <p data-i18n="services.subtitle">
             I offer a range of services to help bring your digital vision to
             life
           </p>
         </div>
-        <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <p>
-              Beautiful, intuitive interfaces that engage users and drive
-              conversions. I create designs that are both aesthetically pleasing
-              and highly functional.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>
-              Robust, scalable websites built with clean, maintainable code. I
-              bring designs to life with the latest web technologies.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>Responsive Design</h3>
-            <p>
-              Flawless experiences across all devices and screen sizes. Your
-              website will look and work great everywhere.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-server"></i>
-            </div>
-            <h3>Backend Development</h3>
-            <p>
-              Building robust and scalable backend systems with modern
-              technologies. I create efficient server-side solutions that power
-              your applications.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-exchange-alt"></i>
-            </div>
-            <h3>API Development</h3>
-            <p>
-              Professional REST and SOAP API development. I design clean,
-              well-documented APIs that integrate seamlessly with frontend and
-              mobile applications.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-robot"></i>
-            </div>
-            <h3>Automation</h3>
-            <p>
-              Custom automation solutions to streamline your workflows. I can
-              automate repetitive tasks and integrate various services to save
-              you time and effort.
-            </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-rocket"></i>
-            </div>
-            <h3>Deployment & DevOps</h3>
-            <p>
-              Seamless deployment to platforms like Vercel and more. I ensure
-              your applications are deployed efficiently and run smoothly in
-              production.
-            </p>
-          </div>
+        <div class="services-grid" id="services-container">
+          <!-- Service cards will be dynamically inserted here by JavaScript -->
         </div>
       </div>
     </section>
@@ -173,130 +112,17 @@
       id="work"
     >
       <div class="container">
-        <div class="portfolio-header">
-          <h2>Selected Work</h2>
-          <p>A selection of my recent projects and case studies</p>
+        <div class="section-header">
+          <h2 data-i18n="portfolio.title">Selected Work</h2>
+          <p data-i18n="portfolio.subtitle">A selection of my recent projects and case studies</p>
         </div>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <div
-              class="portfolio-image"
-              style="
-                background-image: url('https://picsum.photos/800/1000?random=1');
-              "
-            ></div>
-            <div class="portfolio-content">
-              <span class="portfolio-category">Web Development</span>
-              <h3>Minimal Portfolio</h3>
-              <div class="portfolio-links">
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View project"
-                >
-                  <i class="fas fa-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View code"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div
-              class="portfolio-image"
-              style="
-                background-image: url('https://picsum.photos/800/1000?random=2');
-              "
-            ></div>
-            <div class="portfolio-content">
-              <span class="portfolio-category">Web Development</span>
-              <h3>E-commerce Platform</h3>
-              <div class="portfolio-links">
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View project"
-                >
-                  <i class="fas fa-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View code"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div
-              class="portfolio-image"
-              style="
-                background-image: url('https://picsum.photos/800/1000?random=3');
-              "
-            ></div>
-            <div class="portfolio-content">
-              <span class="portfolio-category">UI/UX Design</span>
-              <h3>Mobile App Design</h3>
-              <div class="portfolio-links">
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View project"
-                >
-                  <i class="fas fa-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View code"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div
-              class="portfolio-image"
-              style="
-                background-image: url('https://picsum.photos/800/1000?random=4');
-              "
-            ></div>
-            <div class="portfolio-content">
-              <span class="portfolio-category">Branding</span>
-              <h3>Brand Identity</h3>
-              <div class="portfolio-links">
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View project"
-                >
-                  <i class="fas fa-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="portfolio-link"
-                  aria-label="View code"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="portfolio-grid" id="portfolio-container">
+          <!-- Portfolio items will be dynamically inserted here by JavaScript -->
         </div>
         <div class="view-more">
-          <a
-            href="#"
-            class="cta-button"
-            >View All Projects <i class="fas fa-arrow-right"></i
-          ></a>
+          <a href="#" class="cta-button" data-i18n="portfolio.viewAll">
+            View All Projects <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -308,10 +134,10 @@
     >
       <div class="container">
         <div class="section-header">
-          <h2>Get In Touch</h2>
-          <p>
+          <h2 data-i18n="contact.title">Get In Touch</h2>
+          <p data-i18n="contact.subtitle">
             Have a project in mind or want to discuss potential opportunities?
-            Let's talk!
+            Feel free to reach out!
           </p>
         </div>
         <form class="contact-form">
@@ -320,6 +146,7 @@
               type="text"
               id="name"
               name="name"
+              data-i18n-placeholder="contact.form.name"
               placeholder="Your Name"
               required
             />
@@ -329,6 +156,7 @@
               type="email"
               id="email"
               name="email"
+              data-i18n-placeholder="contact.form.email"
               placeholder="Your Email"
               required
             />
@@ -337,15 +165,13 @@
             <textarea
               id="message"
               name="message"
-              rows="5"
+              data-i18n-placeholder="contact.form.message"
               placeholder="Your Message"
+              rows="5"
               required
             ></textarea>
           </div>
-          <button
-            type="submit"
-            class="cta-button"
-          >
+          <button type="submit" class="cta-button" data-i18n="contact.form.submit">
             Send Message
           </button>
         </form>
@@ -356,9 +182,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-logo">Gustavo Siqueira</div>
-          <p class="footer-text">
-            © 2025 Gustavo Siqueira. All rights reserved.
+          <p data-i18n="footer.copyright">&copy; 2025 Gustavo Siqueira. All rights reserved.</p>
+          <p>
+            <span data-i18n="footer.madeWith">Made with</span> <i class="fas fa-heart"></i> <span data-i18n="footer.and">and</span> <i class="fas fa-coffee"></i> <span data-i18n="footer.by">by</span>
+            Gustavo Siqueira
           </p>
           <div class="social-links">
             <a
