@@ -689,16 +689,10 @@ section {
 	padding: 0 var(--space-lg);
 }
 
-.contact-form {
-	margin-top: var(--space-xl);
-}
-
-.form-group {
-	margin-bottom: var(--space-md);
-}
-
-.form-group input,
-.form-group textarea {
+/* Form Elements - Base Styles (Least Specific) */
+input[type="text"],
+input[type="email"],
+textarea {
 	width: 100%;
 	padding: 12px 16px;
 	background: rgba(255, 255, 255, 0.02);
@@ -710,23 +704,37 @@ section {
 	transition: var(--transition);
 }
 
-.form-group textarea {
+textarea {
 	resize: vertical;
 	min-height: 150px;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
 	outline: none;
 	border-color: var(--color-accent);
 	box-shadow: 0 0 0 2px rgba(212, 183, 143, 0.2);
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
 	color: var(--color-text-light);
 	opacity: 0.5;
 }
+
+/* Form Components (More Specific) */
+.contact-form {
+	margin-top: var(--space-xl);
+}
+
+.form-group {
+	margin-bottom: var(--space-md);
+}
+
+/* Form Group Overrides (Most Specific) */
+/* No specific overrides needed for form-group elements at this time */
 
 /* Footer */
 .footer {
