@@ -837,6 +837,14 @@ textarea::placeholder {
 	color: var(--color-primary);
 }
 
+/* Mobile-specific button styles */
+@media (max-width: 767px) {
+	.navbar .cta-button[data-i18n="nav.cta"] {
+		padding: 8px 8px;
+		font-size: 0.7rem;
+	}
+}
+
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
 	.hero h1 {
@@ -1041,6 +1049,19 @@ textarea::placeholder {
 
 /* Mobile devices */
 @media (max-width: 767px) {
+	.navbar {
+		padding: 0 12px;
+	}
+
+	.nav-right {
+		gap: 0.5rem;
+	}
+
+	.language-switcher {
+		margin-left: 4px;
+		padding-left: 8px;
+	}
+
 	.portfolio-grid {
 		grid-template-columns: 1fr;
 		gap: 25px;
@@ -1185,7 +1206,6 @@ textarea::placeholder {
 
 	.language-switcher {
 		margin-left: auto;
-		margin-right: var(--space-sm);
 	}
 
 	.mobile-menu-btn {

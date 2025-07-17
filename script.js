@@ -377,6 +377,9 @@ function updateContent(lang) {
   // Save language preference
   localStorage.setItem('preferredLanguage', lang)
   currentLang = lang
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en'
 }
 
 // Initialize language from localStorage or browser language
