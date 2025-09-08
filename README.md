@@ -129,7 +129,7 @@ for details.
 
 Gustavo Siqueira Email:
 [gustavo.sarp@gmail.com](mailto:gustavo.sarp@gmail.com)  
-Website: [gustavosiqueira.com](https://gustavosiqueira.com)
+Website: [siqueira-gustavo.github.io/portfolio/](https://siqueira-gustavo.github.io/portfolio/)
 
 ---
 
